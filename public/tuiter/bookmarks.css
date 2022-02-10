@@ -1,0 +1,105 @@
+html {
+  background-color: black;
+}
+
+i {
+  color: lightgray;
+  padding-right: 12px
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: white;
+}
+
+.wd-post-divider {
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-avatar-img {
+  border-radius: 50%;
+}
+
+.wd-page-container {
+  border: 2px solid rgb(47, 51, 54);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-title-border {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+.wd-title {
+  color: white;
+  font-size: 20px;
+}
+
+.wd-small-p {
+  font-size: 13px;
+}
+
+.wd-post-container {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  max-width: 566px;
+}
+
+.wd-post-content-container {
+  margin-left: 12px;
+}
+
+.wd-post-author {
+  display: flex; 
+  flex-direction: row;
+}
+
+.wd-post-text {
+  max-width: 506px; 
+  padding-bottom: 12px;
+}
+
+.wd-post-article-container {
+  border: 1px solid rgb(47, 51, 54); 
+  border-radius: 15px; 
+  margin-top: 12px;
+}
+
+.wd-post-article-title {
+  padding: 12px;
+}
+
+.wd-lightgray-p {
+  color: lightgray;
+}
+
+.wd-content-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wd-bold-p {
+  font-weight: bold;
+}
+
+.wd-icons-row {
+  padding-top: 12px; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  padding-right: 32px;
+}
+
+.wd-icon-container {
+  display: flex; 
+  flex-direction: row;
+}
+
+.wd-red-text {
+  color: red;
+}
+

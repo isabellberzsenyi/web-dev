@@ -1,98 +1,48 @@
-html {
-  background-color: black;
+.follow-image {
+  width: 50px;
+  height: 50px;
 }
 
-p {
-  color: rgb(110, 118, 125); 
-  font-size: 13px;
-  margin: 5px;
+/* .card-title {
+  bottom: 0px;
+  position: relative;
+} */
+
+@media (min-width: 1400px) {
+  .follow-image {
+    width: 60px;
+    height: 60px;
+  }
+  /* .card-title {
+    top: 55%;
+    position: relative;
+  } */
 }
 
-h4, h5 {
-  color: white; 
-  margin: 0; 
-  margin-left: 5px;
+@media (max-width: 1200px) {
+  .list-group-item {
+    padding-left: 0.5rem;
+  }
+  .tweet-btn {
+    width: 150%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* .card-title {
+    top: 45%;
+    position: relative;
+  } */
 }
-
-.wd-page-container {
-  border: 2px solid rgb(47, 51, 54);
-  border-top-width: 0;
-  padding-left: 16px;
-}
-
-.wd-searchbar {
-  background-color: darkgray;
-  color: white;
-  width: 80%;
-  height: 2em;
-  border-width: 0;
-  border-radius: 1em;
-  box-shadow: none !important;
-  padding-left: 5%;
-  margin-bottom: 16px;
-}
-
-.fa-gear {
-  color: darkgray;
-  padding-right: 12px;
-}
-
-.wd-link-selected {
-  font-size: 15px;
-  padding: 16px;
-  color: rgb(26, 161, 242);
-  border-bottom: 2px solid rgb(26, 161, 242);
-}
-
-.wd-link {
-  font-size: 15px;
-  padding: 16px;
-  color: rgb(110, 118, 125);
-}
-
-.wd-link-divider {
-  height: 16px;
-  width: 100vh;
-  border: 2px solid rgb(47, 51, 54);
-  border-top-width: 4px;
-}
-
-.wd-link-container {
-  padding-bottom: 18px;
-  border-bottom: 2px solid rgb(47, 51, 54);
-}
-
-.wd-post-content-container {
-  display: flex; 
-  flex-direction: column; 
-  border: 2px solid rgb(47, 51, 54);
-}
-
-.wd-post-content-container {
-  display: flex; 
-  flex-direction: column;
-}
-
-.wd-post-container {
-  border: 2px solid rgb(47, 51, 54);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.wd-post-image {
-  margin-right: 16px;
-  border-radius: 15%;
-}
-
-.wd-post-author {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.wd-author {
-  color: white;
+@media (max-width: 996px) {
+  .list-group-item {
+    padding-left: 1.5rem;
+  }
+  .tweet-btn {
+    width: 100%;
+    padding: auto;
+  }
+  /* .card-title {
+    top: 50%;
+    position: relative;
+  } */
 }

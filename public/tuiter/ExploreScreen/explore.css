@@ -3,20 +3,16 @@
   height: 50px;
 }
 
-/* .card-title {
-  bottom: 0px;
-  position: relative;
-} */
+.searchbar {
+  border: 1px solid white; 
+  background: white
+}
 
 @media (min-width: 1400px) {
   .follow-image {
     width: 60px;
     height: 60px;
   }
-  /* .card-title {
-    top: 55%;
-    position: relative;
-  } */
 }
 
 @media (max-width: 1200px) {
@@ -28,10 +24,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* .card-title {
-    top: 45%;
-    position: relative;
-  } */
 }
 @media (max-width: 996px) {
   .list-group-item {
@@ -41,8 +33,4 @@
     width: 100%;
     padding: auto;
   }
-  /* .card-title {
-    top: 50%;
-    position: relative;
-  } */
 }

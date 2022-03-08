@@ -1,0 +1,36 @@
+.follow-image {
+  width: 50px;
+  height: 50px;
+}
+
+.searchbar {
+  border: 1px solid white; 
+  background: white
+}
+
+@media (min-width: 1400px) {
+  .follow-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .list-group-item {
+    padding-left: 0.5rem;
+  }
+  .tweet-btn {
+    width: 150%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 996px) {
+  .list-group-item {
+    padding-left: 1.5rem;
+  }
+  .tweet-btn {
+    width: 100%;
+    padding: auto;
+  }
+}

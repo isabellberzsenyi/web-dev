@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { act } from "react-dom/test-utils";
 import {useDispatch, useSelector} from "react-redux";
 
 const Todos = () => {

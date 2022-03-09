@@ -2,13 +2,19 @@ import React from "react";
 import posts from "./posts.json";
 import PostSummaryItem from "./PostSummaryItem.js";
 
-const PostSummaryList = () => {
+const PostSummaryList = ({title}) => {
   return (
-    <ul class="list-group">
+    <ul className="list-group">
+      {
+        title &&
+        <li className="list-group-item">
+          <h5 className="fw-bolder">{title}</h5>
+        </li>
+      }
       {posts
-        .map((p) => {
+        .map((p, idx) => {
           return(
-            <PostSummaryItem post={p} />
+            <PostSummaryItem post={p} key={idx} />
           )
         })
       }

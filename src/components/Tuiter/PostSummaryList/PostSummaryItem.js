@@ -12,19 +12,30 @@ const PostSummaryItem = ({
   return (
     <li className="list-group-item">
       <div className="row">
-        <div className="col-xl-10 col-md-10 d-flex flex-column">
-          <p className="m-0">{post.topic}</p>
-          <div className="d-flex flex-row align-items-center">
-            <p className="fw-bold m-0">{post.userName}&nbsp;</p>
-            <i className="fa-solid fa-circle-check"></i>
-            <p className="m-0 p-0">&nbsp;- {post.time}</p>
+        <div className="col-9 col-md-10">
+          <div className="text-muted">{post.topic}</div>
+          <div>
+            <span className="fw-bold">
+              {post.userName}
+              <span className="fa-stack" style={{"fontSize": "0.5em"}}>
+                <i className="fas fa-circle fa-stack-2x"></i>
+                <i className="fas fa-check fa-stack-1x fa-inverse"></i>
+              </span>
+            </span>
+            <span className="text-muted">
+              - {post.time}
+            </span>
           </div>
-          <p className="fw-bold lh-sm">
-            {post.title}
-          </p>
+          <div className="fw-bold">{post.title}</div>
         </div>
-        <div className="col-xl-2 col-md-2 m-0 d-flex flex-column align-items-end">
-          <img src={post.image} width="100px" height="100px" className="rounded" alt="post pic" />
+        <div className="col-3 col-md-2">
+          <img src={post.image}
+            alt="qwe"
+            width="85"
+            height="85"
+            className="float-end"
+            style={{"borderRadius" : "10px"}}
+          />
         </div>
       </div>
     </li>

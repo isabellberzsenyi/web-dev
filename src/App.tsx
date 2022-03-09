@@ -26,7 +26,7 @@ function App() {
             element={<Labs />} 
           />
           <Route 
-            path='/tuiter' 
+            path='/tuiter/*' 
             element={<Tuiter />}
           />
         </Routes>

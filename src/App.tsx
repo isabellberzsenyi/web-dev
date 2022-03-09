@@ -1,5 +1,6 @@
 import React from 'react';
 import './vendors/bootstrap/bootstrap.min.css';
+import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
 import Labs from './components/Labs';

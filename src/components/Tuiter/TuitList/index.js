@@ -8,6 +8,7 @@ const selectAllTuits = (state) => state.tuitsReducer;
 const TuitList = () => {
   const tuits = useSelector(selectAllTuits);
   const dispatch = useDispatch();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => findAllTuits(dispatch), []);
 
   return(

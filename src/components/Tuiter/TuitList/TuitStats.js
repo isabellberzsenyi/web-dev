@@ -1,12 +1,12 @@
 import React from "react";
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { updateTuit } from "../../../actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
   const dispatch = useDispatch();
-  const likeClickHandler = () => {
-      dispatch({type: 'like-tuit', tuit});
-  };
+  // const likeClickHandler = () => {
+  //     dispatch({type: 'like-tuit', tuit});
+  // };
   return (
     <div className="row mt-2">
       <div className="col">

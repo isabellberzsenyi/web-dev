@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { createTuit } from '../../../actions/tuits-actions';
 
 const WhatsHappening = () => {
   const [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
 
-  const tuitClickHandler = () => {
-    dispatch({
-      type: 'create-tuit',
-      tuit: whatsHappening
-    })
-  };
+  // const tuitClickHandler = () => {
+  //   dispatch({
+  //     type: 'create-tuit',
+  //     tuit: whatsHappening
+  //   })
+  // };
 
   return (
     <>
@@ -45,7 +46,7 @@ const WhatsHappening = () => {
             <a href="/tuiter"><i className="far fa-smile me-3"></i></a>
             <a href="/tuiter"><i className="far fa-calendar me-3"></i></a>
           </span>
-          <button onClick={tuitClickHandler} className="btn btn-primary fa-pull-right rounded-pill">
+          <button onClick={() => createTuit(dispatch, {tweet: whatsHappening})} className="btn btn-primary fa-pull-right rounded-pill">
             Tuit
           </button>
         </td>

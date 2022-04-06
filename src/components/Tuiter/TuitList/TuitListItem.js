@@ -3,12 +3,13 @@ import './tuits.css';
 // import TweetStats from "./TweetStats";
 import {useDispatch} from "react-redux";
 import TuitStats from "./TuitStats";
+import { deleteTuit } from "../../../actions/tuits-actions";
 
 const TweetListItem = ({tuit}) => {
   const dispatch = useDispatch();
-  const deleteTuitClickHandler = () => {
-    dispatch({type: 'delete-tuit', tuit})
-  }
+  // const deleteTuitClickHandler = () => {
+  //   dispatch({type: 'delete-tuit', tuit})
+  // }
   return(
     <li className="list-group-item">
       <table>
@@ -20,7 +21,7 @@ const TweetListItem = ({tuit}) => {
               />
           </td>
           <td className="ps-3" style={{width: '100%'}}>
-            <i onClick={deleteTuitClickHandler} className="fa fa-remove fa-pull-right"></i>
+            <i onClick={() => deleteTuit(dispatch, tuit)} className="fa fa-remove fa-pull-right"></i>
             <span className="fw-bold">{tuit.userName}</span>
             {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
             <span className="ms-1 text-secondary">@{tuit.handle}</span>

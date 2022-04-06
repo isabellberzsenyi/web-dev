@@ -3,11 +3,12 @@ import { Provider } from "react-redux";
 import { Link, Route, Routes } from "react-router-dom";
 import { combineReducers, createStore } from "redux";
 import tuits from "../../reducers/tuits";
+import tuitsReducer from "../../reducers/tuits-reducer";
 import who from "../../reducers/who";
 import ExploreScreen from "./ExploreScreen";
 import HomeScreen from "./HomeScreen";
 
-const reducer = combineReducers({ tuits: tuits, who });
+const reducer = combineReducers({ tuits: tuits, who, tuitsReducer: tuitsReducer });
 const store = createStore(reducer);
 
 const Tuiter = () => {
